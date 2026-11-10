@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&(!('onpagereveal' in window)||location.protocol==='file:'))d.classList.add('vt-fallback');setTimeout(function(){if(!d.classList.contains('motion'))d.classList.remove('js','vt-fallback')},3000)})(document.documentElement)</script>
+  <title>Clínica odontológica no Jardim Renascença · Clínica IOA São Luís</title>
+  <meta name="description" content="Clínica IOA em São Luís, no Jardim Renascença: implante, ortodontia, tratamento de canal, lentes de contato dental, harmonização facial e mais. Agende sua avaliação gratuita.">
+  <meta property="og:title" content="Clínica IOA · São Luís">
+  <meta property="og:image" content="assets/img/fachada-noturna.jpg">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body data-page="clinica">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="phero">
+      <img class="phero__bg" src="assets/img/clinica-odonto-1.jpg" alt="" width="1280" height="853" fetchpriority="high">
+      <div class="container phero__in">
+        <span class="kicker">Clínica IOA</span>
+        <h1>Odontologia na Clínica IOA São Luís</h1>
+        <p class="lead">Agende sua avaliação gratuita na clínica da unidade, no Jardim Renascença.</p>
+        <div class="btns">
+          <a class="btn btn--gold" href="#agendar">Agendar avaliação gratuita</a>
+          <a class="btn btn--ghost-lt" href="https://wa.me/5598991123521" data-wa="Olá! Gostaria de agendar uma avaliação gratuita na Clínica IOA." data-icon="wa">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="svc-t">
+      <div class="container">
+        <div class="sec-head">
+          <span class="kicker">Serviços</span>
+          <h2 id="svc-t">Serviços da clínica</h2>
+          <p class="lead">Escolha um serviço para já preencher o pedido de avaliação.</p>
+        </div>
+        <ul class="svc-grid" data-servicos></ul>
+      </div>
+    </section>
+
+    <section class="section section--paper" aria-label="Fotos da clínica">
+      <div class="container clinic-photos">
+        <div class="media clinic-photos__tall reveal"><img src="assets/img/cadeira-odonto.jpg" alt="Cadeira odontológica com tela exibindo a marca IOA" width="853" height="1280" loading="lazy"></div>
+        <div class="media reveal"><img src="assets/img/clinica-odonto-2.jpg" alt="Clínica odontológica com iluminação em tons de azul e roxo" width="1280" height="852" loading="lazy"></div>
+        <div class="card clinic-photos__txt reveal">
+          <span class="kicker">Contatos</span>
+          <h2 class="h3">Fale com a clínica</h2>
+          <ul class="foot-list foot-list--ico contact-list">
+            <li><a href="https://wa.me/5598991123521" data-wa="Olá! Tenho uma dúvida sobre a Clínica IOA." data-icon="wa">(98) 99112-3521</a></li>
+            <li><a href="tel:+559821069100" data-icon="phone">(98) 2106-9100</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Carutapera%2C%205%2C%20Jardim%20Renascen%C3%A7a%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%2065075-670" target="_blank" rel="noopener" data-icon="pin">R. Carutapera, 5 – Jardim Renascença, São Luís – MA</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agendar" aria-labelledby="ag-t">
+      <div class="container" style="max-width:720px">
+        <div class="card form-card">
+          <span class="kicker">Avaliação gratuita</span>
+          <h2 id="ag-t">Agende sua avaliação gratuita</h2>
+          <p class="form__status form__status--warn small"><strong>Importante:</strong> não informe dados de saúde neste formulário. A equipe conversa sobre o seu caso na avaliação.</p>
+          <div data-form="clinica"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/motion.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+</body>
+</html>

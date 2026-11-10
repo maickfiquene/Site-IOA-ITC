@@ -1,0 +1,477 @@
+{
+ "cursos": [
+  {
+   "id": "dentistica",
+   "nome": "Dentística"
+  },
+  {
+   "id": "endodontia",
+   "nome": "Endodontia"
+  },
+  {
+   "id": "harmonizacao-orofacial",
+   "nome": "Harmonização Orofacial"
+  },
+  {
+   "id": "implantodontia",
+   "nome": "Implantodontia"
+  },
+  {
+   "id": "ortodontia",
+   "nome": "Ortodontia"
+  },
+  {
+   "id": "odontopediatria",
+   "nome": "Odontopediatria"
+  },
+  {
+   "id": "protese-periodontia",
+   "nome": "Prótese Dentária e Periodontia"
+  },
+  {
+   "id": "itc",
+   "nome": "ITC (treinamento)"
+  }
+ ],
+ "professores": [
+  {
+   "nome": "Adriana Cutrim de Mendonça Vaz",
+   "titulo": null,
+   "cursos": [
+    "dentistica"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "adriana-cutrim-de-mendonca-vaz",
+   "foto": null
+  },
+  {
+   "nome": "Bruno Braga Benatti",
+   "titulo": "Dr.",
+   "cursos": [
+    "dentistica"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "bruno-braga-benatti",
+   "foto": "assets/img/professores/bruno-braga-benatti.jpg"
+  },
+  {
+   "nome": "Daniel Coelho de Carvalho",
+   "titulo": null,
+   "cursos": [
+    "dentistica",
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": "Está na lista de Dentística e de Implantodontia (mesmo cadastro, dois cursos).",
+   "id": "daniel-coelho-de-carvalho",
+   "foto": null
+  },
+  {
+   "nome": "Darlon Martins Lima",
+   "titulo": "Dr.",
+   "cursos": [
+    "dentistica"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "darlon-martins-lima",
+   "foto": "assets/img/professores/darlon-martins-lima.jpg"
+  },
+  {
+   "nome": "Fernando Pinheiro Fialho",
+   "titulo": "Dr.",
+   "cursos": [
+    "dentistica"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "fernando-pinheiro-fialho",
+   "foto": "assets/img/professores/fernando-pinheiro-fialho.jpg"
+  },
+  {
+   "nome": "Ana Carolina Saldanha de Oliveira",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "ana-carolina-saldanha-de-oliveira",
+   "foto": null
+  },
+  {
+   "nome": "Ceci Nunes Carvalho",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "ceci-nunes-carvalho",
+   "foto": null
+  },
+  {
+   "nome": "Claudia de Castro Rizzi Maia",
+   "titulo": "Profa. Dra.",
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [
+    "odontopediatria"
+   ],
+   "status": "conflito",
+   "nota": "Na lista: Endodontia. Aparece no banner de Odontopediatria como 'Cláudia Rizzi'. Confirmar se é a mesma pessoa e se atua nos dois.",
+   "id": "claudia-de-castro-rizzi-maia",
+   "foto": "assets/img/professores/claudia-de-castro-rizzi-maia.jpg"
+  },
+  {
+   "nome": "George Sampaio Bonates dos Santos",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "george-sampaio-bonates-dos-santos",
+   "foto": null
+  },
+  {
+   "nome": "Luiz Bernardo da Mota Neto",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "luiz-bernardo-da-mota-neto",
+   "foto": null
+  },
+  {
+   "nome": "Rammon de Faria Nonato",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "rammon-de-faria-nonato",
+   "foto": null
+  },
+  {
+   "nome": "Rodrigo Teixeira Bretas",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "rodrigo-teixeira-bretas",
+   "foto": null
+  },
+  {
+   "nome": "Wallace Vieira Mendes",
+   "titulo": null,
+   "cursos": [
+    "endodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "wallace-vieira-mendes",
+   "foto": null
+  },
+  {
+   "nome": "Carlos Eduardo Medeiros Santos",
+   "titulo": "Prof. Me.",
+   "cursos": [
+    "harmonizacao-orofacial"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "carlos-eduardo-medeiros-santos",
+   "foto": "assets/img/professores/carlos-eduardo-medeiros-santos.jpg"
+  },
+  {
+   "nome": "Leonarda Oliveira Rolim Tavares Assub",
+   "titulo": "Profa. Ma.",
+   "cursos": [
+    "harmonizacao-orofacial"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "leonarda-oliveira-rolim-tavares-assub",
+   "foto": "assets/img/professores/leonarda-oliveira-rolim-tavares-assub.jpg"
+  },
+  {
+   "nome": "Raizza Moreira Leite da Silva",
+   "titulo": "Profa.",
+   "cursos": [
+    "harmonizacao-orofacial"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "raizza-moreira-leite-da-silva",
+   "foto": "assets/img/professores/raizza-moreira-leite-da-silva.jpg"
+  },
+  {
+   "nome": "Andrei Braga Monteiro",
+   "titulo": "Prof. Me.",
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "andrei-braga-monteiro",
+   "foto": "assets/img/professores/andrei-braga-monteiro.jpg"
+  },
+  {
+   "nome": "Claudio Vanucci Silva de Freitas",
+   "titulo": "Prof. Dr.",
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "claudio-vanucci-silva-de-freitas",
+   "foto": "assets/img/professores/claudio-vanucci-silva-de-freitas.jpg"
+  },
+  {
+   "nome": "Daniel Bittencourt Schmidt",
+   "titulo": "Prof.",
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "daniel-bittencourt-schmidt",
+   "foto": "assets/img/professores/daniel-bittencourt-schmidt.jpg"
+  },
+  {
+   "nome": "Eider Guimarães Bastos",
+   "titulo": null,
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "eider-guimaraes-bastos",
+   "foto": null
+  },
+  {
+   "nome": "Evandro Portela Figueiredo",
+   "titulo": null,
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "evandro-portela-figueiredo",
+   "foto": null
+  },
+  {
+   "nome": "Nuno Filipe D'Almeida",
+   "titulo": null,
+   "cursos": [
+    "implantodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "nuno-filipe-d-almeida",
+   "foto": null
+  },
+  {
+   "nome": "Lorena Lucia Costa Ladeira",
+   "titulo": "Profa. Dra.",
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [
+    "odontopediatria"
+   ],
+   "status": "conflito",
+   "nota": "Na lista: Ortodontia. Aparece no banner de Odontopediatria como 'Lorena Ladeira'. Confirmar se atua nos dois.",
+   "id": "lorena-lucia-costa-ladeira",
+   "foto": "assets/img/professores/lorena-lucia-costa-ladeira.jpg"
+  },
+  {
+   "nome": "Luciana Freitas Gomes e Silva",
+   "titulo": null,
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "luciana-freitas-gomes-e-silva",
+   "foto": null
+  },
+  {
+   "nome": "Luciana Silveira Gonçalves Lima",
+   "titulo": null,
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "luciana-silveira-goncalves-lima",
+   "foto": null
+  },
+  {
+   "nome": "Luís Henrique Amêndola Couto",
+   "titulo": "Prof. Me.",
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [
+    "implantodontia"
+   ],
+   "status": "conflito",
+   "nota": "Na lista: Ortodontia. Aparece no banner de Implantodontia (jaleco com 'Reabilitação Oral'). Confirmar se atua nos dois.",
+   "id": "luis-henrique-amendola-couto",
+   "foto": "assets/img/professores/luis-henrique-amendola-couto.jpg"
+  },
+  {
+   "nome": "Melissa Proença Nogueira Fialho",
+   "titulo": null,
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "melissa-proenca-nogueira-fialho",
+   "foto": null
+  },
+  {
+   "nome": "Saulo André de Andrade Lima",
+   "titulo": null,
+   "cursos": [
+    "ortodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "confirmado",
+   "nota": null,
+   "id": "saulo-andre-de-andrade-lima",
+   "foto": null
+  },
+  {
+   "nome": "Anice Mohana",
+   "titulo": "Profa. Dra.",
+   "cursos": [
+    "odontopediatria"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "anice-mohana",
+   "foto": "assets/img/professores/anice-mohana.jpg"
+  },
+  {
+   "nome": "Clarissa Vieira",
+   "titulo": "Profa. Dra.",
+   "cursos": [
+    "odontopediatria"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "clarissa-vieira",
+   "foto": "assets/img/professores/clarissa-vieira.jpg"
+  },
+  {
+   "nome": "Silas Alves",
+   "titulo": "Prof. Dr.",
+   "cursos": [
+    "odontopediatria"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "silas-alves",
+   "foto": "assets/img/professores/silas-alves.jpg"
+  },
+  {
+   "nome": "Eunice Umeda",
+   "titulo": null,
+   "cursos": [
+    "protese-periodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "eunice-umeda",
+   "foto": "assets/img/professores/eunice-umeda.jpg"
+  },
+  {
+   "nome": "José Ricardo Kina",
+   "titulo": null,
+   "cursos": [
+    "protese-periodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "jose-ricardo-kina",
+   "foto": "assets/img/professores/jose-ricardo-kina.jpg"
+  },
+  {
+   "nome": "Renata Baleeiro",
+   "titulo": null,
+   "cursos": [
+    "protese-periodontia"
+   ],
+   "cursosAConfirmar": [],
+   "status": "fora-da-lista",
+   "nota": "Aparece no banner do curso, mas não está na lista de nomes enviada. Confirmar se entra no site e o nome completo.",
+   "id": "renata-baleeiro",
+   "foto": "assets/img/professores/renata-baleeiro.jpg"
+  },
+  {
+   "nome": "Carlos Alberto Frias Neto",
+   "titulo": "Dr.",
+   "cursos": [],
+   "cursosAConfirmar": [
+    "itc"
+   ],
+   "status": "curso-pendente",
+   "nota": "Foto com uniforme e logo do ITC São Luís, sem curso informado e fora da lista. Curso a confirmar.",
+   "id": "carlos-alberto-frias-neto",
+   "foto": "assets/img/professores/carlos-alberto-frias-neto.jpg"
+  },
+  {
+   "nome": "Stenio Roberto Santos",
+   "titulo": "Dr.",
+   "cursos": [],
+   "cursosAConfirmar": [
+    "itc"
+   ],
+   "status": "curso-pendente",
+   "nota": "Foto com uniforme e logo do ITC São Luís, sem curso informado e fora da lista. Curso a confirmar.",
+   "id": "stenio-roberto-santos",
+   "foto": "assets/img/professores/stenio-roberto-santos.jpg"
+  }
+ ]
+}

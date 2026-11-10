@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&(!('onpagereveal' in window)||location.protocol==='file:'))d.classList.add('vt-fallback');setTimeout(function(){if(!d.classList.contains('motion'))d.classList.remove('js','vt-fallback')},3000)})(document.documentElement)</script>
+  <title>Portal do aluno · em breve · IOA/ITC São Luís</title>
+  <meta name="description" content="Portal do aluno do IOA/ITC São Luís, em desenvolvimento: cursos, agenda de aulas, materiais de apoio, certificados e financeiro em um só lugar.">
+  <meta property="og:title" content="Portal do aluno · IOA/ITC São Luís">
+  <meta property="og:image" content="assets/img/fachada-noturna.jpg">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body data-page="portal">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="phero phero--plain">
+      <div class="container phero__in">
+        <span class="kicker">Área do aluno</span>
+        <h1>Portal do aluno</h1>
+        <p><span class="badge">Em breve · previsto para a Fase 3</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <h2>Tudo da sua formação em um só lugar.</h2>
+          <ul class="list-check">
+            <li data-icon="check">Cursos, agenda de aulas e local</li>
+            <li data-icon="check">Materiais de apoio</li>
+            <li data-icon="check">Certificados para download</li>
+            <li data-icon="check">Financeiro e comprovantes</li>
+          </ul>
+          <p class="muted">O portal ainda está em desenvolvimento. Em breve você poderá acessar por aqui.</p>
+        </div>
+
+        <div class="card login-card" data-nosnippet aria-labelledby="entrar-t">
+          <h2 id="entrar-t" class="h3">Entrar</h2>
+          <p class="form__status form__status--warn small" role="note">Disponível em breve</p>
+          <div class="field">
+            <label for="p-email">E-mail</label>
+            <input id="p-email" class="input" type="email" disabled aria-disabled="true" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="p-senha">Senha</label>
+            <input id="p-senha" class="input" type="password" disabled aria-disabled="true" autocomplete="off">
+          </div>
+          <button type="button" class="btn btn--navy btn--block" disabled aria-disabled="true">Em breve</button>
+          <a class="link-arrow" href="https://wa.me/5598991123521" data-wa="Olá! Tenho uma dúvida sobre o portal do aluno." data-icon="wa">Dúvidas? Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/motion.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+</body>
+</html>

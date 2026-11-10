@@ -1,0 +1,11 @@
+referencia/
+SPEC-site-ioa-itc.md
+PROMPT-*.md
+node_modules/
+.DS_Store
+*.zip
+.vscode/
+
+# Painel simulado: uso local, fora do deploy
+/admin.html
+/js/admin.js

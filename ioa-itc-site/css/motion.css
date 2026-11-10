@@ -1,0 +1,101 @@
+:root { --ease-m: cubic-bezier(.22, .61, .36, 1); }
+
+/* Reveal: estado oculto já na primeira pintura (classe .js vem do script inline no head) */
+html:not(.js) .reveal { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: no-preference) {
+  :where(.js) :where([data-reveal], .reveal, .sec-head, .g-item, .svc-grid > li, .timeline > li, .stat, .visit-band) {
+    opacity: 0; transform: translate3d(0, 24px, 0);
+  }
+  :where(.js) :where([data-reveal], .reveal, .sec-head, .g-item, .svc-grid > li, .timeline > li, .stat, .visit-band).is-visible {
+    opacity: 1; transform: none;
+  }
+  .js.motion .is-revealing { transition: opacity .6s var(--ease-m) var(--rd, 0ms), transform .6s var(--ease-m) var(--rd, 0ms); }
+}
+.js [data-reveal="off"] { opacity: 1; transform: none; transition: none; }
+
+/* Acima da dobra: entrada só por CSS, sem depender de JS */
+@media (prefers-reduced-motion: no-preference) {
+  .js :is(.hero__in, .phero__in, .nf__in) > * { animation: m-rise .7s var(--ease-m) both; }
+  .js :is(.hero__in, .phero__in, .nf__in) > :nth-child(2) { animation-delay: 80ms; }
+  .js :is(.hero__in, .phero__in, .nf__in) > :nth-child(3) { animation-delay: 160ms; }
+  .js :is(.hero__in, .phero__in, .nf__in) > :nth-child(4) { animation-delay: 240ms; }
+  .js :is(.hero__in, .phero__in, .nf__in) > :nth-child(5) { animation-delay: 320ms; }
+  .js :is(.hero__in, .phero__in, .nf__in) > :nth-child(n+6) { animation-delay: 400ms; }
+  @keyframes m-rise { from { opacity: 0; transform: translate3d(0, 24px, 0); } }
+}
+
+/* Hero: Ken Burns e parallax */
+.m-px { position: absolute; inset: 0; z-index: -2; will-change: transform; }
+.motion .hero__bg, .motion .phero__bg { animation: m-kb 20s ease-in-out infinite alternate; transform-origin: 60% 40%; }
+@keyframes m-kb { from { transform: scale(1.02); } to { transform: scale(1.14) translate3d(-1.5%, -1%, 0); } }
+
+/* Cards: elevação por sombra em pseudo-elemento (só opacity) */
+.motion .course-card, .motion .path-card { position: relative; isolation: isolate; transition: transform .45s var(--ease-m); }
+.motion .course-card:hover, .motion .path-card:hover { transform: translate3d(0, -6px, 0); box-shadow: var(--shadow); }
+.motion .course-card::after, .motion .path-card::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+  box-shadow: var(--shadow-lg); opacity: 0; transition: opacity .45s var(--ease-m);
+}
+.motion .course-card:hover::after, .motion .path-card:hover::after { opacity: 1; }
+.motion .path-card__ico { transition: transform .45s var(--ease-m); }
+.motion .path-card:hover .path-card__ico { transform: scale(1.08) rotate(-4deg); }
+.motion .svc { transition: transform .4s var(--ease-m); }
+
+/* Botões */
+.motion .btn { transition: transform .3s var(--ease-m); }
+.motion .btn:hover { transform: translate3d(0, -2px, 0); }
+.motion .btn:active { transform: scale(.97); }
+.motion .btn .ico, .motion .link-arrow .ico { transition: transform .3s var(--ease-m); }
+.motion .btn:hover > .ico:last-child:not(:first-child),
+.motion .link-arrow:hover .ico, .motion .path-card:hover .link-arrow .ico { transform: translate3d(3px, 0, 0); }
+
+/* Formulários e contatos: sem animação */
+.motion form .btn, .motion form .btn:hover, .motion form .btn:active, .motion .btn[disabled] { transform: none; transition: none; }
+.motion .input, .motion .form .check, .motion .contact-list a { transition: none; }
+
+/* Header que encolhe ao rolar */
+.motion .site-header, .motion .site-header__in, .motion .brand img { transition: transform .4s var(--ease-m); }
+.motion .brand img { transform-origin: left center; }
+.motion .site-header::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; background: rgb(255 255 255 / .7);
+  opacity: 0; transition: opacity .4s var(--ease-m);
+}
+.motion .site-header::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: 0 8px 24px rgb(12 28 69 / .12);
+  opacity: 0; transition: opacity .4s var(--ease-m);
+}
+.motion .site-header.is-scrolled { transform: translate3d(0, -8px, 0); }
+.motion .site-header.is-scrolled .site-header__in { transform: translate3d(0, 4px, 0); }
+.motion .site-header.is-scrolled .brand img { transform: scale(.86); }
+.motion .site-header.is-scrolled::before, .motion .site-header.is-scrolled::after { opacity: 1; }
+
+/* Galeria e lightbox */
+.motion .g-item__btn { position: relative; }
+.motion .g-item__btn img { transition: transform .7s var(--ease-m); }
+.motion .g-item__btn:hover img, .motion .g-item__btn:focus-visible img { transform: scale(1.07); }
+.motion .g-item__btn::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 45%, rgb(12 28 69 / .4)); opacity: 0; transition: opacity .4s var(--ease-m);
+}
+.motion .g-item__btn:hover::after, .motion .g-item__btn:focus-visible::after { opacity: 1; }
+.motion .lb { animation: m-fade .35s var(--ease-m) both; }
+.motion .lb__fig { animation: m-zoom .5s var(--ease-m) both; }
+@keyframes m-fade { from { opacity: 0; } }
+@keyframes m-zoom { from { opacity: 0; transform: scale(.94); } }
+
+/* Transição entre páginas: fallback por opacidade (.vt-fallback vem do script inline no head) */
+@media (prefers-reduced-motion: no-preference) {
+  .vt-fallback main, .vt-fallback .site-footer { animation: m-fade .45s var(--ease-m) both; }
+}
+.vt-fallback.is-leaving main, .vt-fallback.is-leaving .site-footer { animation: none; opacity: 0; transition: opacity .3s var(--ease-m); }
+
+/* View Transitions nativas */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  .site-header { view-transition-name: site-header; }
+  .mbar { view-transition-name: mbar; }
+  ::view-transition-old(root) { animation: m-vt-out .3s var(--ease-m) both; }
+  ::view-transition-new(root) { animation: m-vt-in .5s var(--ease-m) both; }
+  @keyframes m-vt-out { to { opacity: 0; transform: translate3d(0, -8px, 0); } }
+  @keyframes m-vt-in { from { opacity: 0; transform: translate3d(0, 12px, 0); } }
+}

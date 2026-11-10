@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Só vale para caminhos que não existem; arquivos reais são servidos normalmente.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
